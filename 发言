@@ -1,0 +1,14 @@
+local TextChatService = game:GetService("TextChatService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local function SendChatMessage(message)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        local textChannel = TextChatService.TextChannels.RBXGeneral
+        textChannel:SendAsync(message)
+    else
+        ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+    end
+end
+
+SendChatMessage("发言")
+SendChatMessage("发言")
