@@ -1,4 +1,4 @@
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/kismiletest/test1/refs/heads/main/UI.lua"))()
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/test1/refs/heads/main/UI.lua"))()
 local win = ui:new("测试")
 local UITab1 = win:Tab("测试")
 local UITab2 = win:Tab("测试1")
