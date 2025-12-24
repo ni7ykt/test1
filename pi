@@ -48,7 +48,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 local RevenantLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 RevenantLib.DefaultColor = Color3.fromRGB(255, 0, 0)
 RevenantLib:Notification({
-  Text = "皮脚本作者: 小皮\u{e000}",
+  Text = "皮脚本作者: 初音\u{e000}",
   Duration = 6,
 })
 wait(1)
